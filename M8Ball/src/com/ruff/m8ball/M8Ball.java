@@ -44,15 +44,18 @@ public class M8Ball {
 }
 
 	public String shake() {
-		String randomElement = answers.get(rand.nextInt(answers.size())); 
-		System.out.println(randomElement);
-		System.out.println(choice);
-		//return random element from list
-		// random class to create random number
-		// use random number to get element from array list
-		//int rnd = new Random().nextInt (this.answers.length);
-		//System.out.println(answers[rnd]);
-		return answers.get(choice); 
+	//	String randomElement = answers.get(rand.nextInt(answers.size())); 
+	//	System.out.println(randomElement);
+	//	System.out.println(choice);
+	//	System.out.println(answers[rnd]);
+	//	return answers.get(choice); 
+		
+		Random r = new Random();
+		int randomIndex=r.nextInt(4);
+		System.out.println("Your answer is: " + answers.get(randomIndex));
+		return answers.get(randomIndex);
+
+		
 	
 	}
 
